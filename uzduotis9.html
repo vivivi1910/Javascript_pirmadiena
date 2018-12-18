@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzduotis 9</title>
+
+</head>
+<input>
+<p> skaiciuotuvas sumai, skirtumui ir sandaugai</p>
+
+<div><label>Iveskite pirma skaiciu</label><input type="text" id="a"></div>
+<div><label>Iveskite antra skaiciu</label><input type="text" id="b"></div>
+<input type=submit onclick="suma ()" value="+">
+<input type=submit onclick="skirtumas()" value="-">
+<input type=submit onclick="sandauga()" value="*">
+<div id="atsakymas"></div>
+
+<script type="text/javascript" language="JavaScript">
+
+
+    function suma() {
+        var a = Number(document.getElementById("a").value);
+        var b = Number(document.getElementById("b").value);
+        document.getElementById("atsakymas").innerHTML = a + b;
+    }
+
+    function skirtumas() {
+        var a = Number(document.getElementById("a").value);
+        var b = Number(document.getElementById("b").value);
+        document.getElementById("atsakymas").innerHTML = a - b;
+    }
+
+    function sandauga() {
+        var a = Number(document.getElementById("a").value);
+        var b = Number(document.getElementById("b").value);
+        document.getElementById("atsakymas").innerHTML = a * b;
+
+    }
+</script>
+
+</body>
+</html>

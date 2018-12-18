@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzduotis 11</title>
+
+</head>
+<body>
+<h1>Uzd 1.11</h1>
+<p>įvesti skaičius kvadrato ir staciakampio skaičiavimu</p>
+
+<div><label>Iveskite pirma krastine</label><input type="text" id="krastine"></div>
+<div><label>Iveskite antra krastine</label><input type="text" id="krastine2"></div>
+<input type=submit onclick="kvadratasSkaiciavimas ()" value="skaiciuoti kvadrato plota">
+<input type=submit onclick="staciakampisSkaiciavimas()" value="skaiciuoti staciakampio plota">
+
+<div id="rezultatas"></div>
+
+<script type="text/javascript" language="JavaScript">
+    function kvadratasSkaiciavimas() {
+        var a = Number(document.getElementById("krastine").value);
+
+
+
+        var rezultatas = kvadratas(a);
+        document.getElementById("rezultatas").innerHTML = rezultatas;
+
+    }
+
+    function kvadratas(krastine) {
+
+        return krastine * krastine;
+    }
+
+
+    function staciakampisSkaiciavimas() {
+        var a = Number(document.getElementById("krastine").value);
+        var b = Number(document.getElementById("krastine2").value);
+
+
+
+        var rezultatas = staciakampis(a,b);
+        document.getElementById("rezultatas").innerHTML = rezultatas;
+
+    }
+    function staciakampis(krastine, krastine2) {
+
+        return krastine * krastine2;
+    }
+</script>
+
+</body>
+</html>

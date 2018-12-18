@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzduotis 8</title>
+
+</head>
+<body>
+<h1>Uzduotis 8</h1>
+<p>kuro sanaudos</p>
+
+<div><label>ivesite kilometru kieki</label><input type="text" id="kilometrai"></div>
+<div><label>iveskite kura</label><input type="text" id="kuras"></div>
+<input type=submit onclick="handleClick()">
+<div id="sanaudos100"></div>
+
+<script type="text/javascript" language="JavaScript">
+    function handleClick() {
+        var a = Number(document.getElementById("kilometrai").value);
+        var b = Number(document.getElementById("kuras").value);
+
+        var atsakymas = sanaudos100(a, b);
+        document.getElementById("sanaudos100").innerHTML = atsakymas;
+        
+    }
+
+    function sanaudos100(kilometrai, kuras) {
+
+        return (kuras * 100) / kilometrai;
+    }
+</script>
+
+</body>
+</html>

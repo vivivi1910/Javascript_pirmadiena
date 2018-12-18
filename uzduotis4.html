@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzduotis 2</title>
+
+</head>
+<body>
+<input type="text" id="a">
+<input type="text" id="b">
+<input type=submit onclick="handleClick()">
+<div id="suma"></div>
+<div id="skirtumas"></div>
+
+<script type="text/javascript" language="JavaScript">
+    function handleClick() {
+        var a = Number(document.getElementById("a").value);
+        var b = Number(document.getElementById("b").value);
+
+        suma(a, b);
+        skirtumas(a, b);
+    }
+
+    function suma(a,b) {
+        document.getElementById("suma").innerHTML = a + b;
+    }
+    function skirtumas(a,b) {
+        document.getElementById("skirtumas").innerHTML = a - b;
+    }
+</script>
+
+</body>
+</html>

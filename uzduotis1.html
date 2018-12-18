@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzduotis 1</title>
+
+</head>
+<body>
+<input type="text" id="ivedimas">
+<input type="submit" onclick="handleClick()">
+<div id="isvedimas"></div>
+
+<script type="text/javascript" language="JavaScript">
+    function handleClick() {
+        var tekstas = document.getElementById("ivedimas").value;
+        document.getElementById("isvedimas").innerHTML += tekstas+ "<br>";
+        document.getElementById("isvedimas").innerHTML += tekstas+ "<br>";
+        document.getElementById("isvedimas").innerHTML += tekstas+ "<br>";
+        document.getElementById("isvedimas").innerHTML += tekstas+ "<br>";
+        document.getElementById("isvedimas").innerHTML += tekstas+ "<br>";
+    }
+</script>
+
+</body>
+</html>

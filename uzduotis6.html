@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzduotis 6</title>
+
+</head>
+<body>
+<h1>Uzd 1.6</h1>
+<p>Naujame dok....</p>
+<input type="text" id="ugis">
+<input type="text" id="mase">
+<input type=submit onclick="handleClick()">
+<div id="kmi"></div>
+
+<script type="text/javascript" language="JavaScript">
+    function handleClick() {
+        var u = Number(document.getElementById("ugis").value);
+        var m = Number(document.getElementById("mase").value);
+
+        var atsakymas = kmi(u, m);
+        document.getElementById("kmi").innerHTML = atsakymas;
+
+        kmi(u, m);
+
+    }
+
+    function kmi(ugis, mase) {
+
+        return mase / (ugis * ugis);
+    }
+</script>
+
+</body>
+</html>
+
+

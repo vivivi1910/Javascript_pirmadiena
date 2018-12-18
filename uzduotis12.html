@@ -1,0 +1,62 @@
+<h1>Uzd 1.12</h1>
+<p>įvesti skaičius kvadrato, staciakampio, trikampio ploto skaičiavimui</p>
+
+<div><label>Iveskite pirma krastine</label><input type="text" id="krastine"></div>
+<div><label>Iveskite antra krastine</label><input type="text" id="krastine2"></div>
+<input type=submit onclick="kvadratasSkaiciavimas ()" value="skaiciuoti kvadrato plota">
+<input type=submit onclick="staciakampisSkaiciavimas()" value="skaiciuoti staciakampio plota">
+<input type=submit onclick="trikampisSkaiciavimas()" value="skaiciuoti trikampio plota">
+
+<div id="rezultatas"></div>
+
+<script type="text/javascript" language="JavaScript">
+    function kvadratasSkaiciavimas() {
+        var a = Number(document.getElementById("krastine").value);
+
+
+        var rezultatas = kvadratas(a);
+        document.getElementById("rezultatas").innerHTML = rezultatas;
+
+    }
+
+    function kvadratas(krastine) {
+
+        return krastine * krastine;
+    }
+
+
+    function staciakampisSkaiciavimas() {
+        var a = Number(document.getElementById("krastine").value);
+        var b = Number(document.getElementById("krastine2").value);
+
+
+        var rezultatas = staciakampis(a, b);
+        document.getElementById("rezultatas").innerHTML = rezultatas;
+
+    }
+
+    function staciakampis(krastine, krastine2) {
+
+        return krastine * krastine2;
+
+
+    }
+
+    function trikampisSkaiciavimas() {
+        var a = Number(document.getElementById("krastine").value);
+        var b = Number(document.getElementById("krastine2").value);
+
+
+        var rezultatas = trikampis(a, b);
+        document.getElementById("rezultatas").innerHTML = rezultatas;
+
+    }
+
+    function trikampis(krastine, krastine2) {
+
+        return (krastine * krastine2) / 2;
+    }
+</script>
+
+</body>
+</html>

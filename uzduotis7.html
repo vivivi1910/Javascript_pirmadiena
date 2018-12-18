@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzduotis 7</title>
+
+</head>
+<body>
+<input type="text" id="ivedimas">
+<input type="text" id="ivedimas2">
+<input type=submit onclick="handleClick()">
+<div id="sanaudos100"></div>
+
+<script type="text/javascript" language="JavaScript">
+    function handleClick() {
+        var a = Number(document.getElementById("ivedimas").value);
+        var b = Number(document.getElementById("ivedimas2").value);
+        document.getElementById("sanaudos100").innerHTML = (b * 100) / a;
+    }
+</script>
+
+</body>
+</html>

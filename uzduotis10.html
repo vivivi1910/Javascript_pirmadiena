@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uzduotis 10</title>
+
+</head>
+<body>
+<h1>Uzd 1.10</h1>
+<p>įvesti skaičių kvadrato skaičiavimu</p>
+<div><label>Iveskite skaiciu</label><input type="text" id="skaicius" value=""></div>
+<input type=submit onclick="handleClick()" value="skaiciuoti">
+<div id="rezultatas"></div>
+
+<script type="text/javascript" language="JavaScript">
+    function handleClick() {
+        var a = document.getElementById("skaicius").value;
+        a = Number(a);
+
+
+        var atsakymas = rezultatas(a);
+        document.getElementById("rezultatas").innerHTML = atsakymas;
+        alert(atsakymas);
+    }
+
+    function rezultatas(a) {
+
+        return a * a;
+    }
+</script>
+
+</body>
+</html>
